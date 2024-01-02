@@ -1,4 +1,6 @@
 # Depends on stress-ng. Install stress-ng (apt, yum) 
+### get core id of which pdcp_worker_0 is running using
+sudo python3 display_core_allocation.py -t nf
 # Example usage : 
 sudo python3 stressor.py -w pdcp_worker_0 -p 0 -c 16 -i 10 -d mixed_set2_anomaly -o 2200
 ## -w thread name
