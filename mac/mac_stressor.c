@@ -26,6 +26,7 @@ int main(int argc, char *argv[]) {
         printf("Failed to open file\n");
         exit(1);
     }
+    int i = fixed;
     while (k < count) {
         j = 1000;
         struct timespec start_time, end_time;
