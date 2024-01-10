@@ -2,10 +2,10 @@ Stressor for different type of anomaly.
 
 ## Commands used to generate the traffic 
 - **iperf3 dl tcp** `iperf3 -c 11.11.11.11 -l 1320 -t 600` 
-- **iperf3 ul tcp ** `iperf3 -c 11.11.11.11 -l 1320 -t 600 -R` 
+- **iperf3 ul tcp** `iperf3 -c 11.11.11.11 -l 1320 -t 600 -R` 
 - **iperf3 dl udp** `iperf3 -c 11.11.11.11 -l 1320 -t 200 -u -b 10M` 
 - **iperf3 ul udp** `iperf3 -c 11.11.11.11 -l 1320 -t 200 -u -b 10M -R`  
-- ** file dl ** `wget https://speed.hetzner.de/1GB.bin`  
+- **file dl** `wget https://speed.hetzner.de/1GB.bin`  
 - **file ul** Use scp to copy a dummy file to generate file ul traffic.
 - **video** `mpv https://www.dailymotion.com/video/x7xtdoc -vo=null -v` (requires mpv to be installed `sudo apt install mpv`)
 
