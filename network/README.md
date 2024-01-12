@@ -1,7 +1,26 @@
-# First make tcppump. 
-how to make : https://github.com/amartin755/tcppump
-# copy exp_network_contention.sh to bin directory. 
-# Example usage :  ./exp_network_contention.sh <delay> <count> <experiment>
-## delay : use 0 delay. 
-## count : number of times to run the stress
-## experiment : name of experiment 
+
+# To run
+```
+cd execution
+./run_it.sh
+```
+## To alter the behaviour of the test, edit run_it.sh and change the following parameters .. 
+```
+server_fh_intf=
+server_fh_mac=
+ru_fh_mac=
+```
+
+## Change these if you need to experiment further
+```
+delay=0
+count=16
+experiment="network-stress"
+```
+where 
+```
+-delay: Use delay=0
+-count : number of time to run stress
+-exp : name of experiment 
+```
+
