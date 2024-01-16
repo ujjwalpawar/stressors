@@ -4,27 +4,30 @@
 if [ ! -d "tcppump" ]; then
     echo "Creating tcppump."
     git clone https://github.com/amartin755/tcppump.git
-    cd tcpdump
+    pushd .
+    cd tcppump
     if [ ! -d "build" ]; then
         rm -rf build/*
     fi
     cmake -B build
     cmake --build build
+    popd
 fi
 
 labru1_ru_fh_mac="6c:ad:ad:00:00:69"
+labru1_server_fh_mac="66:44:33:22:11:00"
 
 devel5g3_server_fh_intf=eth1      # find this using sudo ip link
-devel5g3_server_fh_mac="66:44:33:22:11:00"
+
 telco2_server_fh_intf=eth4      # find this using sudo ip link
-telco2_server_fh_mac="aa:bb:cc:dd:ee:ff"
+#telco2_server_fh_mac="aa:bb:cc:dd:ee:ff"
 
 # CHANGE THE FOLLOWING 3 LINES AS NEEDED
 server_fh_intf=
 server_fh_mac=
-ru_fh_mac=
+ru_fh_mac="11:11:11:11:aa:bb"                  # random
 
-delay=0
+delay=1
 count=16
 experiment="network-stress"
 
