@@ -34,7 +34,7 @@ echo $entity:$thread is found on core $core_id
 count=16
 
 set -x
-sudo python3 stressor.py -w pdcp_worker_0 -p 0 -c $count -i $core_id  -d mixed_set2_anomaly -o 2200
+sudo python3 stressor.py -w $thread -p 0 -c $count -i $core_id  -d mixed_set2_anomaly -o 2200
 set +x
 ## -w thread name
 ## -p priorty (increament priority of stressor by input value)

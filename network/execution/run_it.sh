@@ -30,7 +30,7 @@ server_fh_intf=$telco2_server_fh_intf
 server_fh_mac=$labru1_server_fh_mac
 ru_fh_mac=$labru1_ru_fh_mac
 
-delay=1
+delay=2
 count=16
 experiment="network-stress"
 

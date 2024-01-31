@@ -18,6 +18,7 @@ sudo python3 display_core_allocation.py -t nf > thread_list.txt
 
 entity=DU
 thread=SlotHlr_DU1_C0
+#thread=recv_data_0
 
 core_id=$(python3 $HERE/get_core.py $entity $thread)
 exit_code=$?
@@ -34,7 +35,7 @@ echo $entity:$thread is found on core $core_id
 make
 
 ops=185000
-count=24
+count=4
 exp=mac_stress
 
 set -x
